@@ -4,18 +4,18 @@
 #include <iostream>
 #include <string>
 
-std::string merge_alternate_strings (const std::string& word1, const std::string& word2) {
+std::string merge_alternate_strings(const std::string& word1, const std::string& word2) {
 	std::string merged;
 	short i = 0, j = 0;
 
-	while (i < word1.length() && j < word2.length()) {
+	while(i < word1.length() && j < word2.length()) {
 		merged += word1[i];
 		merged += word2[j];
 		i++; j++;
 	}
 
 	//Append the remaining characters from both the strings, if any
-	merged += word1.substr(i) + word2. substr(j);
+	merged += word1.substr(i) + word2.substr(j);
 
 	return merged;
 }

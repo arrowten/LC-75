@@ -21,10 +21,10 @@ std::string gcd_string(const std::string& str1, const std::string& str2) {
 	//Check if test divides both str1 and str2 
 	std::string con_str1 = "", con_str2 = "";
 
-	while (con_str1.length() < l1) con_str1 += test;
-	while (con_str2.length() < l2) con_str2 += test;
+	while(con_str1.length() < l1) con_str1 += test;
+	while(con_str2.length() < l2) con_str2 += test;
 
-	if (con_str1 == str1 && con_str2 == str2) return test;
+	if(con_str1 == str1 && con_str2 == str2) return test;
 	else return "";
 }
 
